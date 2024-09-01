@@ -31,7 +31,17 @@
                     rotation="-45 180 0"
                     scale="1 1 1"
                     gltf-model="assets/arportbook.glb"
-                ></a-entity>
+                >
+                    <a-animation
+                      attribute="rotation"
+                      from="20 0 0"
+                      to="20 180 0"
+                      direction="alternate"
+                      dur="4000"
+                      repeat="indefinite"
+                      easing="ease">
+                    </a-animation>
+                </a-entity>
             </a-marker>
 
             <a-entity camera></a-entity>
